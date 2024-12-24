@@ -1,0 +1,72 @@
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+.overlay {
+    /* box model */
+    background-color: #00000041;
+    backdrop-filter: blur(3px);
+    height: 100vh; width: 100vw;
+    top: 0; left: 0;
+
+    /* display */
+    position: absolute;
+}
+
+
+/****************************/
+/*********** HERO ***********/
+/****************************/
+@media (max-width: 374px) {
+    #hero__container { width: 100%; padding-inline: 20px; gap: 10px; }
+    #hero__container__buttons { margin-top: 10px; }
+    #hero__container__buttons > button { width: 100%; }
+}
+
+@media (min-width: 374px) and (max-width: 1022px) {
+    #hero__container { padding-inline: 20px; max-width: 500px; gap: 10px; }
+    #hero__container__buttons { margin-top: 10px; }
+    #hero__container__buttons > button { width: 150px; }
+}
+
+@media (min-width: 1023px) {
+    #hero__container { max-width: 600px; gap: 15px; }
+    #hero__container__buttons { margin-top: 10px; }
+    #hero__container__buttons > button { width: 150px; }
+}
+
+#hero {
+    /* display */
+    place-content: center;
+    place-items: center;
+
+    /* box model */
+    background-image: url(../img/hero-background2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#hero__container {
+    /* display */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+#hero__container__buttons {
+    /* display */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#hero__container__buttons > button {
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+#hero__container__buttons > button:first-child {
+    background-color: #00D0FF;
+}

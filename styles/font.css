@@ -1,0 +1,31 @@
+
+* { letter-spacing: 1px; }
+
+
+
+/****************************/
+/*********** HERO ***********/
+/****************************/
+@media (max-width: 700px) {
+    #hero__container > h1 { font-size: 20px;}
+    #hero__container > p { font-size: 15px; line-height: 20px; }
+    #hero__container__buttons > button { font-size: 12px; }    
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+    #hero__container > h1 { font-size: 23px;}
+    #hero__container > p { font-size: 15px; line-height: 23px; }
+    #hero__container__buttons > button { font-size: 12px; }
+}
+
+@media (min-width: 1023px) {
+    #hero__container > h1 { font-size: 25px;}
+    #hero__container > p { font-size: 18px; line-height: 25px; }
+    #hero__container__buttons > button { font-size: 15px; }
+}
+
+#hero__container > h1, p { color: #ffffff; }
+#hero__container > h1 { font-weight: bold; }
+#hero__container__buttons > button { font-weight: bold; }
+#hero__container__buttons > button:first-child { color: #ffffff; }
+#hero__container__buttons > button { color: #000; }

@@ -1,0 +1,11 @@
+
+
+
+/****************************/
+/*********** HERO ***********/
+/****************************/
+#hero__container__buttons > button:hover {
+    background-color: #ffffff48;
+    border-color: #000;
+    color: #FFFFFF;
+}
