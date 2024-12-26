@@ -24,8 +24,39 @@
     #hero__container__buttons > button { font-size: 15px; }
 }
 
-#hero__container > h1, p { color: #ffffff; }
+#hero__container > h1, #hero__container > p { color: #ffffff; }
 #hero__container > h1 { font-weight: bold; }
 #hero__container__buttons > button { font-weight: bold; }
 #hero__container__buttons > button:first-child { color: #ffffff; }
 #hero__container__buttons > button { color: #000; }
+
+/********************************/
+/*********** SERVICES ***********/
+/********************************/
+
+@media (max-width: 700px) {
+    #services__container__header > h2 { font-size: 20px;}
+    #services__container__header > p { font-size: 17px; line-height: 25px; }
+
+    .services__container__body__card__content > span { font-size: 17px; }
+    .services__container__body__card__content > p { font-size: 15px; line-height: 23px; }
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+    #services__container__header > h2 { font-size: 23px;}
+    #services__container__header > p { font-size: 18px; line-height: 25px; }
+
+    .services__container__body__card__content > span { font-size: 19px; }
+    .services__container__body__card__content > p { font-size: 15px; line-height: 23px; }
+}
+
+@media (min-width: 1023px) {
+    #services__container__header > h2 { font-size: 23px;}
+    #services__container__header > p { font-size: 18px; line-height: 25px; }
+
+    .services__container__body__card__content > span { font-size: 20px; }
+    .services__container__body__card__content > p { font-size: 18px; line-height: 25px; }
+}
+
+#services__container__header > h2 { color: #00D0FF; }
+.services__container__body__card__content > span { font-weight: bold; color: #00D0FF; }

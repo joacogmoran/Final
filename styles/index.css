@@ -4,7 +4,7 @@
     /* box model */
     background-color: #00000041;
     backdrop-filter: blur(3px);
-    height: 100vh; width: 100vw;
+    height: 100vh; width: 100%;
     top: 0; left: 0;
 
     /* display */
@@ -35,8 +35,7 @@
 
 #hero {
     /* display */
-    place-content: center;
-    place-items: center;
+    place-content: center; place-items: center;
 
     /* box model */
     background-image: url(../img/hero-background2.jpg);
@@ -69,4 +68,82 @@
 
 #hero__container__buttons > button:first-child {
     background-color: #00D0FF;
+}
+
+/********************************/
+/*********** SERVICES ***********/
+/********************************/
+@media (max-width: 570px) {
+    #services__container { padding: 20px; gap: 30px ;}
+    #services__container__header { max-width: 500px; }
+    #services__container__body { gap: 30px; }
+
+    .services__container__body__card { flex-direction: column; text-align: center; }
+    .services__container__body__card > img { height: 100%; width: 100%; }
+}
+
+@media (min-width: 570px) and (max-width: 1022px) {
+    #services__container { padding: 20px; gap: 30px; }
+    #services__container__header { max-width: 500px; }
+    #services__container__body { gap: 30px; }    
+
+    .services__container__body__card:nth-child(2),
+    .services__container__body__card:nth-child(4) {
+        flex-direction: row-reverse;
+    }
+
+    .services__container__body__card > img { width: 47%; }
+    .services__container__body__card__content { width: 53%; }
+}
+
+@media (min-width: 1023px) {
+    #services__container { padding: 30px; gap: 50px; }
+    #services__container__header { max-width: 600px; }
+    #services__container__body { gap: 50px; }
+
+    .services__container__body__card:nth-child(2),
+    .services__container__body__card:nth-child(4) {
+        flex-direction: row-reverse;
+    }
+
+    .services__container__body__card > img { width: 47%; }
+    .services__container__body__card__content { width: 53%; }
+}
+
+#services__container, #services__container__header,
+#services__container__body, .services__container__body__card,
+.services__container__body__card__content {
+    /* display */
+    display: flex;
+}
+
+#services__container, #services__container__header,
+#services__container__body, .services__container__body__card__content {
+    /* display */
+    flex-direction: column;
+}
+
+#services__container, #services__container__body {
+    /* box model */
+    background-color: #FAFAFB;
+}
+
+#services__container__header {
+    /* display */
+    text-align: center;
+    gap: 10px;
+
+    /* box model */
+    margin: 0 auto;
+}
+
+.services__container__body__card {
+    /* display */
+    gap: 30px;
+}
+
+.services__container__body__card > img { border-radius: 5px; }
+.services__container__body__card__content {
+    /* display */
+    gap: 10px;
 }
