@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/boxModel.css">
+    <link rel="stylesheet" href="./styles/sections.css">
     <link rel="stylesheet" href="./styles/font.css">
     <link rel="stylesheet" href="./styles/effects.css">
     <title>Document</title>
@@ -13,30 +13,30 @@
     
     <main>
 
-        <!-- HERO -->
+        <!-- HERO
         <section id="hero">
-            <div class="overlay"></div>
-            <div id="hero__container">
-                <h1>Las Pendientes Ski Village</h1>
-                <p>
+            <div class="hero__background--blur"></div>
+            <div id="hero__container" class="container__header--width">
+                <h1 class="bold__blue__text">Las Pendientes Ski Village</h1>
+                <p class="white__text">
                     Las Pendientes es el único Ski Village de Argentina, donde la naturaleza,
                     la calidez del diseño y el cuidado por los detalles y el medio ambiente,
                     se conjugan en una propuesta mágica que invita a vivir momentos inolvidables.
                 </p>
                 <div id="hero__container__buttons">
-                    <button>Quiero ir!</button>
-                    <button>Contacto</button>
+                    <button class="card__title">Quiero ir!</button>
+                    <button class="card__title">Contacto</button>
                 </div>
             </div>
         </section>
-
-        <!-- SERVICES -->
-        <section>
+        -->
+        
+        <!-- SERVICES
+        <section id="services" class="section--bmodel">
             <div id="services__container">
-                
-                <div id="services__container__header">
-                    <h2>Nuestros Servicios</h2>
-                    <p>
+                <div id="services__container__header" class="container__header--width">
+                    <h2 class="container__header__title bold__blue__text">Nuestros Servicios</h2>
+                    <p class="container__header__text">
                         Nos especializamos en brindar experiencias únicas
                         para los amantes del ski, conectándote con las mejores
                         opciones para disfrutar al máximo de la montaña.
@@ -44,12 +44,11 @@
                 </div>
 
                 <div id="services__container__body">
-
                     <div class="services__container__body__card">
                         <img src="./img/ski-rental.png" alt="">
                         <div class="services__container__body__card__content">
-                            <span>Ski & Snowboard Rental</span>
-                            <p>
+                            <span class="card__title bold__blue__text">Ski & Snowboard Rental</span>
+                            <p class="card__text">
                                 Facilitamos todo lo necesario para que disfrutes de la nieve sin
                                 complicaciones. Contamos con equipos modernos, ajustados a tus
                                 necesidades y nivel de experiencia, para garantizarte comodidad
@@ -60,12 +59,11 @@
                         </div>
                     </div>
 
-                    <!-- usar column-reverse -->
                     <div class="services__container__body__card">
-                        <img src="./img/ski-school.png" alt="">
+                        <img src="./img/ski-school2.png" alt="">
                         <div class="services__container__body__card__content">
-                            <span>Ski and Snowboard School</span>
-                            <p>
+                            <span class="card__title bold__blue__text">Ski and Snowboard School</span>
+                            <p class="card__text">
                                 Descubre la emoción de deslizarte por la nieve con la guía de nuestros
                                 instructores especializados. Diseñamos clases adaptadas a todos los niveles,
                                 desde principiantes hasta avanzados, con un enfoque personalizado para
@@ -78,8 +76,8 @@
                     <div class="services__container__body__card">
                         <img src="./img/transfer.png" alt="">
                         <div class="services__container__body__card__content">
-                            <span>Transfer on Snowmobile</span>
-                            <p>
+                            <span class="card__title bold__blue__text">Transfer on Snowmobile</span>
+                            <p class="card__text">
                                 Hacemos que tu llegada y salida sean parte de la aventura. Ofrecemos
                                 traslados en motos de nieve para check-in y check-out, asegurando comodidad
                                 y una experiencia única desde el primer momento. ¡Disfruta del paisaje
@@ -91,8 +89,8 @@
                     <div class="services__container__body__card">
                         <img src="./img/restaurante.png" alt="">
                         <div class="services__container__body__card__content">
-                            <span>Restaurant</span>
-                            <p>
+                            <span class="card__title bold__blue__text">Restaurant</span>
+                            <p class="card__text">
                                 Abierto todo el día durante el invierno, The Club House Restaurant ofrece
                                 un menú delicioso para disfrutar en cualquier momento. Además, contamos con
                                 servicio de delivery para que puedas saborear nuestras especialidades
@@ -101,12 +99,61 @@
                             </p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        -->
 
+        <!-- BENEFITS
+        <section id="benefits" class="section--bmodel">
+            <div id="benefits__background--blur"></div>
+            <div id="benefits__container">
+                
+                <div id="benefits__container__header" class="container__header--width">
+                    <h3 class="container__header__title bold__blue__text">Beneficios</h3>
+                    <p class="container__header__text white__text">
+                        Las Pendientes, a 1400 m en el Cerro Chapelco, ofrece pistas
+                        privadas de ski y acceso al centro de ski entre naturaleza y
+                        vistas únicas.
+                    </p>
+                </div>
+                
+                <div id="benefits__container__body">
+                    <div class="benefits__container__body__card">
+                        <img src="./img/ski-school.png" alt="">
+                        <div class="benefits__container__body__card__content">
+                            <span class="card__title bold__text">Pistas Privadas</span>
+                            <p class="card__text">
+                                Disfruta de un ambiente tranquilo con acceso exclusivo
+                                a dos pistas privadas de ski.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefits__container__body__card">
+                        <img src="./img/background2.png" alt="">
+                        <div class="benefits__container__body__card__content">
+                            <span class="card__title bold__text">Vistas Impresionantes</span>
+                            <p class="card__text">
+                                Ubicado a 1400 metros, con vistas espectaculares del Volcán
+                                Lanín y la Cordillera de los Andes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefits__container__body__card">
+                        <img src="./img/ski-cabin.png" alt="">
+                        <div class="benefits__container__body__card__content">
+                            <span class="card__title bold__text">Comodidad Total</span>
+                            <p class="card__text">
+                                Cabañas equipadas y todos los servicios para que tu
+                                experiencia sea sin preocupaciones.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </section>
-
+        -->
     </main>
 
 </body>

@@ -1,62 +1,65 @@
-
 * { letter-spacing: 1px; }
 
+/***************************/
+/********** COLOR **********/
+/***************************/
+.bold__blue__text { font-weight: bold; color: #00D0FF; }
+.bold__text { font-weight: bold; }
+.white__text { color: #FFFF; }
+
+
+/*******************************************/
+/********** CONTAINER HEADER FONT **********/
+/*******************************************/
+@media (max-width: 570px) {
+    .container__header__title { font-size: 20px; }
+    .container__header__text { font-size: 17px; line-height: 30px; }
+}
+
+@media (min-width: 570px) and (max-width: 1024px) {
+    .container__header__title { font-size: 23px; }
+    .container__header__text { font-size: 20px; line-height: 32px; }
+}
+
+@media (min-width: 1024px) {
+    .container__header__title { font-size: 25px; }
+    .container__header__text { font-size: 23px; line-height: 35px; }
+}
+
+
+/*******************************/
+/********** CARD FONT **********/
+/*******************************/
+@media (max-width: 570px) {
+    .card__title { font-size: 17px; }
+    .card__text { font-size: 15px; line-height: 30px; }
+}
+
+@media (min-width: 570px) and (max-width: 1024px) {
+    .card__title { font-size: 18px; }
+    .card__text { font-size: 15px; line-height: 30px; }
+}
+
+@media (min-width: 1024px) {
+    .card__title { font-size: 20px; }
+    .card__text { font-size: 17px; line-height: 30px; }
+}
 
 
 /****************************/
 /*********** HERO ***********/
 /****************************/
-@media (max-width: 700px) {
+@media (max-width: 570px) {
     #hero__container > h1 { font-size: 20px;}
     #hero__container > p { font-size: 15px; line-height: 20px; }
-    #hero__container__buttons > button { font-size: 12px; }    
 }
 
-@media (min-width: 700px) and (max-width: 1023px) {
+@media (min-width: 570px) and (max-width: 1024px) {
     #hero__container > h1 { font-size: 23px;}
     #hero__container > p { font-size: 15px; line-height: 23px; }
-    #hero__container__buttons > button { font-size: 12px; }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
     #hero__container > h1 { font-size: 25px;}
     #hero__container > p { font-size: 18px; line-height: 25px; }
-    #hero__container__buttons > button { font-size: 15px; }
 }
-
-#hero__container > h1, #hero__container > p { color: #ffffff; }
-#hero__container > h1 { font-weight: bold; }
-#hero__container__buttons > button { font-weight: bold; }
-#hero__container__buttons > button:first-child { color: #ffffff; }
-#hero__container__buttons > button { color: #000; }
-
-/********************************/
-/*********** SERVICES ***********/
-/********************************/
-
-@media (max-width: 700px) {
-    #services__container__header > h2 { font-size: 20px;}
-    #services__container__header > p { font-size: 17px; line-height: 25px; }
-
-    .services__container__body__card__content > span { font-size: 17px; }
-    .services__container__body__card__content > p { font-size: 15px; line-height: 23px; }
-}
-
-@media (min-width: 700px) and (max-width: 1023px) {
-    #services__container__header > h2 { font-size: 23px;}
-    #services__container__header > p { font-size: 18px; line-height: 25px; }
-
-    .services__container__body__card__content > span { font-size: 19px; }
-    .services__container__body__card__content > p { font-size: 15px; line-height: 23px; }
-}
-
-@media (min-width: 1023px) {
-    #services__container__header > h2 { font-size: 23px;}
-    #services__container__header > p { font-size: 18px; line-height: 25px; }
-
-    .services__container__body__card__content > span { font-size: 20px; }
-    .services__container__body__card__content > p { font-size: 18px; line-height: 25px; }
-}
-
-#services__container__header > h2 { color: #00D0FF; }
-.services__container__body__card__content > span { font-weight: bold; color: #00D0FF; }

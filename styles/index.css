@@ -1,149 +1,19 @@
 * { box-sizing: border-box; padding: 0; margin: 0; }
 
-.overlay {
-    /* box model */
-    background-color: #00000041;
-    backdrop-filter: blur(3px);
-    height: 100vh; width: 100%;
-    top: 0; left: 0;
-
-    /* display */
-    position: absolute;
-}
-
-
-/****************************/
-/*********** HERO ***********/
-/****************************/
-@media (max-width: 374px) {
-    #hero__container { width: 100%; padding-inline: 20px; gap: 10px; }
-    #hero__container__buttons { margin-top: 10px; }
-    #hero__container__buttons > button { width: 100%; }
-}
-
-@media (min-width: 374px) and (max-width: 1022px) {
-    #hero__container { padding-inline: 20px; max-width: 500px; gap: 10px; }
-    #hero__container__buttons { margin-top: 10px; }
-    #hero__container__buttons > button { width: 150px; }
-}
-
-@media (min-width: 1023px) {
-    #hero__container { max-width: 600px; gap: 15px; }
-    #hero__container__buttons { margin-top: 10px; }
-    #hero__container__buttons > button { width: 150px; }
-}
-
-#hero {
-    /* display */
-    place-content: center; place-items: center;
-
-    /* box model */
-    background-image: url(../img/hero-background2.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-#hero__container {
-    /* display */
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    text-align: center;
-}
-
-#hero__container__buttons {
-    /* display */
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-#hero__container__buttons > button {
-    padding: 10px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-}
-
-#hero__container__buttons > button:first-child {
-    background-color: #00D0FF;
-}
-
-/********************************/
-/*********** SERVICES ***********/
-/********************************/
+/*******************************/
+/*******************************/
+/*******************************/
 @media (max-width: 570px) {
-    #services__container { padding: 20px; gap: 30px ;}
-    #services__container__header { max-width: 500px; }
-    #services__container__body { gap: 30px; }
-
-    .services__container__body__card { flex-direction: column; text-align: center; }
-    .services__container__body__card > img { height: 100%; width: 100%; }
+    .container__header--width { max-width: 100%; }
+    .section--bmodel { padding: 20px; }
 }
 
-@media (min-width: 570px) and (max-width: 1022px) {
-    #services__container { padding: 20px; gap: 30px; }
-    #services__container__header { max-width: 500px; }
-    #services__container__body { gap: 30px; }    
-
-    .services__container__body__card:nth-child(2),
-    .services__container__body__card:nth-child(4) {
-        flex-direction: row-reverse;
-    }
-
-    .services__container__body__card > img { width: 47%; }
-    .services__container__body__card__content { width: 53%; }
+@media (min-width: 570px) and (max-width: 1024px) {
+    .container__header--width { max-width: 500px; }
+    .section--bmodel { padding: 30px; }
 }
 
-@media (min-width: 1023px) {
-    #services__container { padding: 30px; gap: 50px; }
-    #services__container__header { max-width: 600px; }
-    #services__container__body { gap: 50px; }
-
-    .services__container__body__card:nth-child(2),
-    .services__container__body__card:nth-child(4) {
-        flex-direction: row-reverse;
-    }
-
-    .services__container__body__card > img { width: 47%; }
-    .services__container__body__card__content { width: 53%; }
-}
-
-#services__container, #services__container__header,
-#services__container__body, .services__container__body__card,
-.services__container__body__card__content {
-    /* display */
-    display: flex;
-}
-
-#services__container, #services__container__header,
-#services__container__body, .services__container__body__card__content {
-    /* display */
-    flex-direction: column;
-}
-
-#services__container, #services__container__body {
-    /* box model */
-    background-color: #FAFAFB;
-}
-
-#services__container__header {
-    /* display */
-    text-align: center;
-    gap: 10px;
-
-    /* box model */
-    margin: 0 auto;
-}
-
-.services__container__body__card {
-    /* display */
-    gap: 30px;
-}
-
-.services__container__body__card > img { border-radius: 5px; }
-.services__container__body__card__content {
-    /* display */
-    gap: 10px;
+@media (min-width: 1024px) {
+    .container__header--width { max-width: 600px; }
+    .section--bmodel { padding: 50px; }
 }
