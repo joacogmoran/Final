@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/sections.css">
     <link rel="stylesheet" href="./styles/font.css">
-    <link rel="stylesheet" href="./styles/effects.css">
     <title>Document</title>
 </head>
 <body>
@@ -24,12 +23,12 @@
                     se conjugan en una propuesta mágica que invita a vivir momentos inolvidables.
                 </p>
                 <div id="hero__container__buttons">
-                    <button class="card__title">Quiero ir!</button>
-                    <button class="card__title">Contacto</button>
+                    <a href="#contact" class="card__title">Quiero ir!</a>
+                    <a href="#contact" class="card__title">Contacto</a>
                 </div>
             </div>
         </section>
-        
+    
         <!-- SERVICES -->
         <section id="services" class="section--bmodel">
             <div id="services__container">
@@ -118,6 +117,13 @@
             </div>
         </section>
 
+        <!-- VIDEO -->
+        <section id="video">
+            <div id="video__container" class="section--bmodel">
+                <iframe src="https://www.youtube.com/embed/sDPEnI8Z7uQ?autoplay=1&mute=1&loop=1&playlist=sDPEnI8Z7uQ&vq=hd1080" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
         <!-- BENEFITS -->
         <section id="benefits" class="section--bmodel">
             <div id="benefits__background--blur"></div>
@@ -168,13 +174,6 @@
             </div>
         </section>
 
-        <!-- VIDEO -->
-        <section id="video">
-            <div id="video__container" class="section--bmodel">
-                <iframe src="https://www.youtube.com/embed/sDPEnI8Z7uQ?autoplay=1&mute=1&loop=1&playlist=sDPEnI8Z7uQ&vq=hd1080" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </section>
-
         <!-- CONTACT -->
         <section id="contact" class="section--bmodel">
 
@@ -194,27 +193,27 @@
 
                     <form id="contact__container__body__form">
 
-                        <div class="contact__container__body__form__inputs">
+                        <div class="contact__container__body__form__inputs show__up">
                             <label for="" class="card__text bold__text">Como te llamas?</label>
                             <input type="text">
                         </div>
 
-                        <div class="contact__container__body__form__inputs">
+                        <div class="contact__container__body__form__inputs show__up">
                             <label for="" class="card__text bold__text">Cual es tu mail?</label>
                             <input type="text">
                         </div>
 
-                        <div class="contact__container__body__form__inputs">
+                        <div class="contact__container__body__form__inputs show__up">
                             <label for="" class="card__text bold__text">De que se trata tu consulta?</label>
                             <input type="text">
                         </div>
 
-                        <div class="contact__container__body__form__inputs">
+                        <div class="contact__container__body__form__inputs show__up">
                             <label for="" class="card__text bold__text">Te escuchamos!</label>
                             <textarea name="" id=""></textarea>
                         </div>
 
-                        <div class="contact__container__body__form__inputs">
+                        <div class="contact__container__body__form__inputs show__up">
                             <button class="card__title bold__text">Enviar</button>
                         </div>
 
@@ -227,6 +226,34 @@
         </section>
 
     </main>
+
+    <footer id="footer">
+        <div id="footer__container" class="section--bmodel">
+
+            <div class="footer__container__content">
+                <span class="container__header__title white__text">Las Pendientes Ski Village</span>
+                <ul>
+                    <a href="#services"><li class="card__text">Servicios</li></a>
+                    <a href="#benefits"><li class="card__text">Beneficios</li></a>
+                    <a href="#contact"><li class="card__text">Contacto</li></a>
+                </ul>
+            </div>
+
+            <div class="footer__container__content">
+                <span class="container__header__title white__text">Nuestras Redes Sociales</span>
+                <ul>
+                    <li class="card__text">Instagram</li>
+                    <li class="card__text">TikTok</li>
+                    <li class="card__text">Whatsapp</li>
+                </ul>
+            </div>
+
+            <div id="footer__container__map">
+                <iframe src="https://g.co/kgs/RY8MD4e" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+    </footer>
 
 </body>
 </html>

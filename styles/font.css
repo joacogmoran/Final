@@ -63,3 +63,5 @@
     #hero__container > h1 { font-size: 25px;}
     #hero__container > p { font-size: 18px; line-height: 25px; }
 }
+
+#hero__container__buttons > a { color: #000; }

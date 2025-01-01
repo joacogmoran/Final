@@ -1,4 +1,8 @@
-* { box-sizing: border-box; padding: 0; margin: 0; }
+html { scroll-behavior: smooth; }
+* {
+    box-sizing: border-box; padding: 0; margin: 0;
+    list-style: none; text-decoration: none;
+}
 
 /*******************************/
 /*******************************/
@@ -16,4 +20,27 @@
 @media (min-width: 1024px) {
     .container__header--width { max-width: 600px; }
     .section--bmodel { padding: 50px; }
+}
+
+
+/*******************************/
+/*******************************/
+/*******************************/
+
+#hero {
+    animation-name: hero_background;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+@keyframes hero_background {
+    0% { background-image: url(../img/background-snow.png); }
+    20% { background-image: url(../img/background1.jpg); }
+    60% { background-image: url(../img/background3.jpg); }
+    100% { background-image: url(../img/background-snow.png); }
 }

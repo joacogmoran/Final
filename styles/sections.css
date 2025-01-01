@@ -4,19 +4,19 @@
 @media (max-width: 570px) {
     #hero__container { width: 100%; padding-inline: 20px; gap: 10px; }
     #hero__container__buttons { gap: 10px; margin-top: 15px; }
-    #hero__container__buttons > button { width: 100%; }
+    #hero__container__buttons > a { width: 100%; }
 }
 
 @media (min-width: 570px) and (max-width: 1024px) {
     #hero__container { padding-inline: 20px; gap: 10px; }
     #hero__container__buttons { gap: 20px; margin-top: 10px; }
-    #hero__container__buttons > button { width: 150px; }
+    #hero__container__buttons > a { width: 150px; }
 }
 
 @media (min-width: 1024px) {
     #hero__container { gap: 15px; }
     #hero__container__buttons { gap: 30px; margin-top: 10px; }
-    #hero__container__buttons > button { width: 150px; }
+    #hero__container__buttons > a { width: 150px; }
 }
 
 #hero, #hero__container {
@@ -25,26 +25,20 @@
     align-items: center;
 }
 
-#hero {
-    position: relative;
-
-    background-image: url(../img/hero-background2.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+#hero, #hero__container {
+    position: relative; z-index: 1;
 }
 
 .hero__background--blur {
-    position: absolute;
+    position: absolute; z-index: 0;
     height: 100vh; width: 100%;
     top: 0; left: 0;
 
-    background-color: #00000041;
+    background-color: #00000059;
     backdrop-filter: blur(3px);
 }
 
 #hero__container {
-    position: relative;
     text-align: center;
 }
 
@@ -53,14 +47,21 @@
     justify-content: center;
 }
 
-#hero__container__buttons > button {
+#hero__container__buttons > a {
+    background-color: #FAFAFB;
     border: 1px solid transparent;
     border-radius: 5px;
     padding: 10px;
 }
 
-#hero__container__buttons > button:first-child {
+#hero__container__buttons > a:first-child {
     background-color: #00D0FF;
+}
+
+#hero__container__buttons > a:hover {
+    background-color: #ffffff48;
+    border-color: #000;
+    color: #000;
 }
 
 
@@ -144,25 +145,29 @@
 }
 
 @media (min-width: 570px) and (max-width: 1024px) {
+    #benefits { padding-bottom: 100px; }
     #benefits__container { gap: 30px; }
     #benefits__container__header { gap: 10px; }
     #benefits__container__body { gap: 30px; }
-    .benefits__container__body__card { max-width: 300px; }
+    .benefits__container__body__card { width: 100%; }
+    #benefits__container__body > .benefits__container__body__card:nth-child(odd) { transform: translateY(50px); }
     .benefits__container__body__card > img { height: 130px; width: 100%; }
     .benefits__container__body__card__content { padding: 20px 10px; }
 }
 
 @media (min-width: 1024px) {
+    #benefits { padding-bottom: 100px; }
     #benefits__container { gap: 30px; }
     #benefits__container__header { gap: 10px; }
     #benefits__container__body { gap: 30px; }
-    .benefits__container__body__card { max-width: 300px; }
+    .benefits__container__body__card { width: 270px; }
+    #benefits__container__body > .benefits__container__body__card:nth-child(odd) { transform: translateY(50px); }
     .benefits__container__body__card > img { height: 170px; width: 100%; }
     .benefits__container__body__card__content { padding: 30px; }
 }
 
 #benefits {
-    background-image: url(../img/home-mockup-cozy-log-cabin-interior-background-3d-render-generative-ai-photo\ 1.png);
+    background-image: url(../img/cabin-background.png);
     background-position: center;
     background-size: cover;
 }
@@ -218,12 +223,16 @@
 }
 
 #video { background-color: #000; }
-#video__container > iframe { width: 100%; }
+#video__container > iframe {
+    border: 0.1px solid #00D0FF;
+    border-radius: 5px;
+    width: 100%;
+}
 
 
-/********************************/
-/*********** BENEFITS ***********/
-/********************************/
+/*******************************/
+/*********** CONTACT ***********/
+/*******************************/
 @media (max-width: 570px) {
     #contact__container { gap: 30px; }
     #contact__container__header { gap: 10px; }
@@ -239,7 +248,7 @@
     #contact__container__body__form { gap: 20px; }
     .contact__container__body__form__inputs > input, .contact__container__body__form__inputs > textarea { padding: 10px; }
     .contact__container__body__form__inputs > textarea { height: 120px; }
-    .contact__container__body__form__inputs > button { padding-block: 20px; width: 170px; }
+    .contact__container__body__form__inputs > button { padding-block: 10px; width: 130px; }
 }
 
 @media (min-width: 1024px) {
@@ -248,11 +257,11 @@
     #contact__container__body__form { gap: 30px; }
     .contact__container__body__form__inputs > input, .contact__container__body__form__inputs > textarea { padding: 10px; }
     .contact__container__body__form__inputs > textarea { height: 200px; }
-    .contact__container__body__form__inputs > button { padding-block: 20px; width: 200px; }
+    .contact__container__body__form__inputs > button { padding-block: 10px; width: 150px; }
 }
 
 
-#contact { background-color: #FAFAFB; }
+#contact { background-color: whitesmoke; }
 #contact__container, #contact__container__header, #contact__container__body__form,
 .contact__container__body__form__inputs {
     display: flex;
@@ -286,4 +295,57 @@
     background-color: #00D0FF;
     border-radius: 5px;
     border: none;
+}
+
+/******************************/
+/*********** FOOTER ***********/
+/******************************/
+@media (max-width: 570px) {
+    #footer__container {
+        grid-template-rows: repeat(3, 1fr);
+        text-align: center;
+    }
+
+    .footer__container__content {
+        align-items: center;
+    }
+}
+
+@media (min-width: 570px) and (max-width: 1024px) {
+    #footer__container { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1024px) {
+    #footer__container { grid-template-columns: repeat(3, 1fr); }
+}
+
+#footer {
+    background-color: #00D0FF;
+}
+
+#footer__container {
+    display: grid; gap: 20px;
+}
+
+.footer__container__content, .footer__container__content > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__container__content {
+    gap: 20px;
+}
+
+.footer__container__content > span { max-width: 200px; }
+
+.footer__container__content > ul {
+    gap: 10px;
+}
+
+.footer__container__content > ul > a {
+    color: #000;
+}
+
+#footer__container__map > iframe {
+    height: 100%; width: 100%;
 }
